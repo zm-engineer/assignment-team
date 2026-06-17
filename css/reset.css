@@ -1,0 +1,71 @@
+/* ==========================================================================
+   reset.css — Small modern CSS reset
+   Normalizes default browser styling so every section starts from zero.
+   ========================================================================== */
+
+/* Use border-box everywhere so padding/border never expand element width. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-height root for layouts that need it. */
+html,
+body {
+  height: 100%;
+}
+
+/* Sensible default line-height and smoother text. */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Media elements should scale down responsively. */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls. */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflow on long words. */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove list styling defaults. */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Links inherit color by default; styled per section later. */
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,28 @@
+/* ==========================================================================
+   variables.css 
+   Single source of truth for colors, font family and type sizes.
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-dark: #1F2937;        /* Hero & footer background; info header & quote text */
+  --color-light: #F9FAF8;       /* Hero title, logo */
+  --color-gray-light: #E5E7EB;  /* Secondary text, header links, quote background */
+  --color-blue: #3882F6;        /* Buttons, call-to-action background */
+
+  /* Typography */
+  --font: 'Roboto', sans-serif;
+
+  /* Font sizes */
+  --fs-hero-title: 48px;        /* weight 900 */
+  --fs-logo: 24px;              /* weight 700 */
+  --fs-info-header: 36px;       /* weight 900 */
+  --fs-quote: 36px;             /* weight 300, italic */
+  --fs-secondary: 18px;         /* secondary text & links */
+
+  /* Font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
