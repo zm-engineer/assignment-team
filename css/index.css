@@ -3,40 +3,12 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Section 1: Header + Hero — owner: Ziuling
+   Section 1: Hero — owner: Ziuling
+   (Header/nav styles moved to the shared components.css)
    -------------------------------------------------------------------------- */
 
 .hero-block {
   background-color: var(--color-dark);
-}
-
-.site-header {
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.logo {
-  font-size: var(--fs-logo);
-  font-weight: var(--fw-bold);
-  color: var(--color-light);
-}
-
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.site-nav a {
-  font-size: var(--fs-secondary);
-  color: var(--color-gray-light);
-  transition: color 0.15s ease;
-}
-
-.site-nav a:hover {
-  color: var(--color-light);
 }
 
 .hero {
@@ -66,14 +38,16 @@
   color: var(--color-gray-light);
 }
 
-/* Right column: hero image filling the column */
+/* Right column: hero illustration (transparent PNG) on a gray panel */
 .hero__image {
   flex: 1;
   min-width: 0; /* allow the image to shrink inside the flex row */
   align-self: stretch; /* match the height of the text column */
   width: 100%;
   height: 250px;
-  object-fit: cover; /* crop instead of distort */
+  padding: 16px;
+  object-fit: contain; /* show the whole illustration, no cropping */
+  background-color: var(--color-gray-light);
   border-radius: 8px;
 }
 
@@ -119,19 +93,8 @@
   }
 }
 
-/* Mobile: center the header, let the nav wrap and center; smaller title */
+/* Mobile: smaller hero title (header behavior lives in components.css) */
 @media (max-width: 600px) {
-  .site-header {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .nav-list {
-    justify-content: center;
-  }
-
   .hero__title {
     font-size: var(--fs-info-header); /* 36px */
   }

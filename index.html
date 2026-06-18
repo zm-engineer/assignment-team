@@ -9,57 +9,63 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <!-- Shared components (header, footer) -->
+    <link rel="stylesheet" href="css/components.css" />
     <!-- Page-specific styles -->
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <!-- Section 1: Header + Hero  — owner: Ziuling -->
-    <section class="hero-block">
-      <header class="site-header container">
-        <a href="index.html" class="logo">Header Logo</a>
+    <!-- Site header — shared component (also used on every secondary page) -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
         <nav class="site-nav" aria-label="Primary">
           <ul class="nav-list">
-            <li><a href="page-2.html">header link one</a></li>
-            <li><a href="page-3.html">header link two</a></li>
-            <li><a href="page-3.html">header link three</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page-2.html">About</a></li>
+            <li><a href="page-3.html">Contact</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
+    <!-- Section 1: Hero — owner: Ziuling -->
+    <section class="hero-block">
       <!-- Hero: two columns (text + image)
-       The div tag is used to group elements by design; 
+       The div tag is used to group elements by design;
        no specific semantic tag is needed here. -->
       <div class="hero container">
         <div class="hero__text">
-          <h1 class="hero__title">This website is awesome</h1>
+          <h1 class="hero__title">The web, kept simple</h1>
           <p class="hero__subtext">
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
+            We craft fast, accessible websites with clean, vanilla HTML and CSS —
+            no bulky frameworks, no clutter. Just content that loads instantly and
+            works on every screen.
           </p>
-          <a href="page-3.html" class="btn">Sign up</a>
+          <a href="page-3.html" class="btn">Get in touch</a>
         </div>
         <img
           class="hero__image"
-          src="img/hero-placeholder.jpg"
-          alt="Decorative hero image"
+          src="img/hero-illustration.png"
+          alt="Illustration of web development on a laptop showing HTML and DIV tags"
         />
       </div>
     </section>
 
     <!-- Section 2: Some random information (4 cards) — owner: Ziuling -->
     <section class="info container">
-      <h2 class="info__heading">Moments worth slowing down for.</h2>
+      <h2 class="info__heading">What we care about.</h2>
 
       <ul class="cards">
         <li class="card">
           <figure class="card__figure">
             <img
               class="card__img"
-              src="img/card-boathouse.jpg"
-              alt="A wooden boathouse on a still lake under a starry night sky"
+              src="img/web-page.jpg"
+              alt="A designer building a web page on a laptop"
             />
             <figcaption class="card__caption">
-              A quiet boathouse rests on still water beneath a sky full of stars.
+              Lightweight pages that load in the blink of an eye.
             </figcaption>
           </figure>
         </li>
@@ -67,11 +73,11 @@
           <figure class="card__figure">
             <img
               class="card__img"
-              src="img/card-swings.jpg"
-              alt="A row of empty swings in a park at dusk"
+              src="img/responsive.jpg"
+              alt="The same website shown on a phone, laptop and desktop"
             />
             <figcaption class="card__caption">
-              Empty swings in the park, waiting for the next burst of laughter.
+              Responsive layouts that adapt to every screen size.
             </figcaption>
           </figure>
         </li>
@@ -79,11 +85,11 @@
           <figure class="card__figure">
             <img
               class="card__img"
-              src="img/card-waterdrops.jpg"
-              alt="Close-up of water droplets scattered across a surface"
+              src="img/semantic-html.jpg"
+              alt="A diagram of semantic HTML tags: header, aside, body and footer"
             />
             <figcaption class="card__caption">
-              Tiny water droplets turn an ordinary surface into a constellation.
+              Clean, semantic HTML that is built to last.
             </figcaption>
           </figure>
         </li>
@@ -91,11 +97,11 @@
           <figure class="card__figure">
             <img
               class="card__img"
-              src="img/card-surfboard.jpg"
-              alt="A surfboard lying on the sand as the sun sets over the ocean"
+              src="img/web-accesible.jpg"
+              alt="A person in a wheelchair using a laptop, with accessibility icons"
             />
             <figcaption class="card__caption">
-              A surfboard on the sand as the sun melts into the ocean.
+              Accessible, clutter-free design everyone can use.
             </figcaption>
           </figure>
         </li>
