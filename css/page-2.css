@@ -1,0 +1,63 @@
+/* ==========================================================================
+   page-2.css — "About" page specific styles
+   Same visual language as the landing.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Main content — reuses .container (flex + max-width + horizontal padding)
+   -------------------------------------------------------------------------- */
+.about {
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+/* Heading styled like the information header (36px / 900). */
+.about__heading {
+  margin-bottom: 24px;
+  font-size: var(--fs-info-header);
+  font-weight: var(--fw-black);
+  color: var(--color-dark);
+}
+
+.about__text {
+  max-width: 640px; /* keep line length readable */
+  margin-bottom: 16px;
+  font-size: var(--fs-secondary);
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+/* --------------------------------------------------------------------------
+   Value items — Flexbox row that wraps to a single column on small screens
+   -------------------------------------------------------------------------- */
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.value {
+  flex: 1 1 200px; /* three across on desktop, wrap when space runs out */
+}
+
+.value__title {
+  margin-bottom: 4px;
+  font-size: var(--fs-secondary);
+  font-weight: var(--fw-bold);
+  color: var(--color-dark);
+}
+
+.value__text {
+  font-size: var(--fs-secondary);
+  color: #6B7280; /* muted gray, not an existing token */
+}
+
+/* Mobile: force the value items into a single column. */
+@media (max-width: 600px) {
+  .value {
+    flex: 1 1 100%;
+  }
+}

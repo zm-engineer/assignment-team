@@ -1,0 +1,68 @@
+/* ==========================================================================
+   components.css — Shared components used across every page
+   Site header (logo + nav) and site footer. Layout uses Flexbox only —
+   no CSS Grid. Colors/sizes come from variables.css custom properties.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Site header — full-width dark bar; content constrained by .container
+   -------------------------------------------------------------------------- */
+.site-header {
+  background-color: var(--color-dark);
+}
+
+/* .container provides flex + max-width + horizontal padding; here we just
+   space the logo and nav apart and center them vertically. */
+.site-header__inner {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-bold);
+  color: var(--color-light);
+}
+
+/* Code-style brackets accent in the logo */
+.logo__mark {
+  margin-right: 6px;
+  color: var(--color-blue);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.site-nav a {
+  font-size: var(--fs-secondary);
+  color: var(--color-gray-light);
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover {
+  color: var(--color-light);
+}
+
+/* NOTE: The shared site footer (.site-footer) is owned by Monica and will be
+   added here as a shared component. Left out on purpose for now. */
+
+/* --------------------------------------------------------------------------
+   Responsive — header centers and nav wraps on small screens
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .site-header__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+}
