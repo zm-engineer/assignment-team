@@ -6,6 +6,137 @@
    Section 1: Header + Hero — owner: Ziuling
    -------------------------------------------------------------------------- */
 
+.hero-block {
+  background-color: var(--color-dark);
+}
+
+.site-header {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-bold);
+  color: var(--color-light);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.site-nav a {
+  font-size: var(--fs-secondary);
+  color: var(--color-gray-light);
+  transition: color 0.15s ease;
+}
+
+.site-nav a:hover {
+  color: var(--color-light);
+}
+
+.hero {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 48px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+/* Left column: title, subtext, button */
+.hero__text {
+  flex: 1;
+}
+
+.hero__title {
+  font-size: var(--fs-hero-title);
+  font-weight: var(--fw-black);
+  line-height: 1.1;
+  color: var(--color-light);
+}
+
+.hero__subtext {
+  margin-top: 8px;
+  max-width: 420px;
+  font-size: var(--fs-secondary);
+  color: var(--color-gray-light);
+}
+
+/* Right column: hero image filling the column */
+.hero__image {
+  flex: 1;
+  min-width: 0; /* allow the image to shrink inside the flex row */
+  align-self: stretch; /* match the height of the text column */
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* crop instead of distort */
+  border-radius: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Reusable button (also used in Section 4 — keep generic)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.btn:hover {
+  background-color: #1c6fe0; /* slightly darker shade of --color-blue */
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+/* Tablet: stack hero text on top, image below */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 56px;
+    padding-bottom: 64px;
+  }
+
+  .hero__subtext {
+    max-width: none;
+  }
+}
+
+/* Mobile: center the header, let the nav wrap and center; smaller title */
+@media (max-width: 600px) {
+  .site-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .hero__title {
+    font-size: var(--fs-info-header); /* 36px */
+  }
+}
+  
 
 /* --------------------------------------------------------------------------
    Section 2: Some random information (4 cards) — owner: Ziuling
