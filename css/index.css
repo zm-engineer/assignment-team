@@ -141,6 +141,81 @@
 /* --------------------------------------------------------------------------
    Section 2: Some random information (4 cards) — owner: Ziuling
    -------------------------------------------------------------------------- */
+/* .info reuses .container (flex + max-width + horizontal padding). Stack its
+   children vertically (heading on top, cards below) and center them. */
+.info {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.info__heading {
+  margin-bottom: 48px;
+  font-size: var(--fs-info-header); /* 36px */
+  font-weight: var(--fw-black);
+  color: var(--color-dark);
+  text-align: center;
+}
+
+/* Cards row: Flexbox with wrap so it can reflow responsively. */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+}
+
+/* Each card: the figure (image + caption), stacked. */
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 220px; /* sit four-in-a-row on desktop, allowed to shrink */
+  max-width: 220px;
+}
+
+/* figure groups the image and its caption; reset its default margin. */
+.card__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* crop instead of distort */
+  border: 3px solid var(--color-dark);
+  border-radius: 12px;
+}
+
+.card__caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #6B7280; /* muted gray, not an existing token */
+  text-align: center;
+}
+
+/* Tablet: cards wrap into a 2x2 layout. */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 40%;
+    max-width: 280px;
+  }
+}
+
+/* Mobile: cards stack into a single column; smaller heading. */
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 320px;
+  }
+
+  .info__heading {
+    font-size: 28px;
+  }
+}
 
 
 /* --------------------------------------------------------------------------
