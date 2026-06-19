@@ -195,6 +195,7 @@
   line-height: 1.8;
   color: var(--color-dark);
   font-style: italic;
+  text-align: center;
 }
 
 .testimonial__author {
