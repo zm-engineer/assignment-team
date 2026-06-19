@@ -45,7 +45,15 @@
 /* --------------------------------------------------------------------------
    Global typography
    -------------------------------------------------------------------------- */
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font);
   font-weight: var(--fw-regular);
   font-size: var(--fs-secondary);
@@ -59,4 +67,8 @@ body {
   width: clamp(600px, 90vw, 1100px);
   margin-inline: auto;
   padding-inline: 24px;
+}
+
+main {
+  flex: 1 0 auto;
 }

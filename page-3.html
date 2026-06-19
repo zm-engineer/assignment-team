@@ -9,9 +9,31 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <!-- Add a page-specific stylesheet here when needed -->
   </head>
   <body>
+    <!-- Site header — shared component (same markup as index.html) -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page-2.html">About</a></li>
+            <li><a href="page-3.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- Page 3 content goes here -->
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__text">
+          &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
