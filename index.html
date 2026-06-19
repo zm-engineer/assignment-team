@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Project — Home</title>
 
-    <!-- Shared CSS foundation -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <!-- Shared components (header, footer) -->
-    <link rel="stylesheet" href="css/components.css" />
-    <!-- Page-specific styles -->
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <!-- Site header — shared component (also used on every secondary page) -->
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
-        <nav class="site-nav" aria-label="Primary">
-          <ul class="nav-list">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="page-2.html">About</a></li>
-            <li><a href="page-3.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Project — Home</title>
 
-    <!-- Section 1: Hero — owner: Ziuling -->
-    <section class="hero-block">
-      <!-- Hero: two columns (text + image)
+  <!-- Shared CSS foundation -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- Shared components (header, footer) -->
+  <link rel="stylesheet" href="css/components.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <!-- Site header — shared component (also used on every secondary page) -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="page-2.html">About</a></li>
+          <li><a href="page-3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: Hero — owner: Ziuling -->
+  <section class="hero-block">
+    <!-- Hero: two columns (text + image)
        The div tag is used to group elements by design;
        no specific semantic tag is needed here. -->
-      <div class="hero container">
-        <div class="hero__text">
-          <h1 class="hero__title">The web, kept simple</h1>
-          <p class="hero__subtext">
-            We craft fast, accessible websites with clean, vanilla HTML and CSS —
-            no bulky frameworks, no clutter. Just content that loads instantly and
-            works on every screen.
-          </p>
-          <a href="page-3.html" class="btn">Get in touch</a>
-        </div>
-        <img
-          class="hero__image"
-          src="img/hero-illustration.png"
-          alt="Illustration of web development on a laptop showing HTML and DIV tags"
-        />
+    <div class="hero container">
+      <div class="hero__text">
+        <h1 class="hero__title">The web, kept simple</h1>
+        <p class="hero__subtext">
+          We craft fast, accessible websites with clean, vanilla HTML and CSS —
+          no bulky frameworks, no clutter. Just content that loads instantly and
+          works on every screen.
+        </p>
+        <a href="page-3.html" class="btn">Get in touch</a>
       </div>
-    </section>
+      <img class="hero__image" src="img/hero-illustration.png"
+        alt="Illustration of web development on a laptop showing HTML and DIV tags" />
+    </div>
+  </section>
 
-    <!-- Section 2: Some random information (4 cards) — owner: Ziuling -->
+  <!-- Section 2: Some random information (4 cards) — owner: Ziuling -->
+  <main>
     <section class="info container">
       <h2 class="info__heading">What we care about.</h2>
 
       <ul class="cards">
         <li class="card">
           <figure class="card__figure">
-            <img
-              class="card__img"
-              src="img/web-page.jpg"
-              alt="A designer building a web page on a laptop"
-            />
+            <img class="card__img" src="img/web-page.jpg" alt="A designer building a web page on a laptop" />
             <figcaption class="card__caption">
               Lightweight pages that load in the blink of an eye.
             </figcaption>
@@ -71,11 +67,8 @@
         </li>
         <li class="card">
           <figure class="card__figure">
-            <img
-              class="card__img"
-              src="img/responsive.jpg"
-              alt="The same website shown on a phone, laptop and desktop"
-            />
+            <img class="card__img" src="img/responsive.jpg"
+              alt="The same website shown on a phone, laptop and desktop" />
             <figcaption class="card__caption">
               Responsive layouts that adapt to every screen size.
             </figcaption>
@@ -83,11 +76,8 @@
         </li>
         <li class="card">
           <figure class="card__figure">
-            <img
-              class="card__img"
-              src="img/semantic-html.jpg"
-              alt="A diagram of semantic HTML tags: header, aside, body and footer"
-            />
+            <img class="card__img" src="img/semantic-html.jpg"
+              alt="A diagram of semantic HTML tags: header, aside, body and footer" />
             <figcaption class="card__caption">
               Clean, semantic HTML that is built to last.
             </figcaption>
@@ -95,11 +85,8 @@
         </li>
         <li class="card">
           <figure class="card__figure">
-            <img
-              class="card__img"
-              src="img/web-accesible.jpg"
-              alt="A person in a wheelchair using a laptop, with accessibility icons"
-            />
+            <img class="card__img" src="img/web-accesible.jpg"
+              alt="A person in a wheelchair using a laptop, with accessibility icons" />
             <figcaption class="card__caption">
               Accessible, clutter-free design everyone can use.
             </figcaption>
@@ -117,17 +104,21 @@
         <cite class="testimonial__author">— Alex Johnson, CEO of TechStart</cite>
       </blockquote>
     </section>
-
-
-
-    <!-- Section 4: Call to action — owner: Monica -->
-         
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__text">
-          &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
-        </p>
+    <section class="cta-banner">
+      <div class="cta-content">
+        <h2>Call to action! It's time!</h2>
+        <p>Sign up for our product by clicking that button right over there!</p>
       </div>
-    </footer>
-  </body>
+      <a href="#" class="cta-button">Sign up</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">
+        &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
