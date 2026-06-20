@@ -92,7 +92,6 @@ main {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-bottom-color: var(--color-dark-faded);
     background-color: var(--color-white);
 }
 
@@ -110,7 +109,7 @@ main {
     background-color: transparent;
     color: var(--color-gray-dark);
     font-weight: var(--fw-bold);
-    transition: transform 0.1s ease, box-shadow 0.15s ease;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
 }
 
 .contact-form .btn:hover {
@@ -122,14 +121,6 @@ main {
 
 .contact-form .btn:active {
     transform: translateY(1px);
-}
-
-.contact-page,
-.contact-page *,
-.contact-overview,
-.contact-info,
-.contact-email {
-    font-family: inherit;
 }
 
 .contact-info {

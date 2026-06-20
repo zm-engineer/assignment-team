@@ -210,7 +210,6 @@
 
 .cta-content {
   max-width: 620px;
-  font-family: inherit;
   color: var(--color-light);
 }
 
@@ -219,7 +218,6 @@
   font-size: 0.95rem;
   font-weight: var(--fw-bold);
   line-height: 1.4;
-  color: var(--color-light);
 }
 
 .cta-content p {
@@ -227,7 +225,6 @@
   max-width: 520px;
   font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--color-light);
 }
 
 .cta-button {
