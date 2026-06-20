@@ -180,7 +180,7 @@
 }
 
 .testimonial__text {
-  font-size: 1.05rem;
+  font-size: var(--fs-quote);
   line-height: 1.8;
   color: var(--color-dark);
   font-style: italic;
