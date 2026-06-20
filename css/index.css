@@ -32,12 +32,15 @@
 /* Right column: hero illustration (transparent PNG) on a gray panel */
 .hero__image {
   flex: 1;
-  min-width: 0; /* allow the image to shrink inside the flex row */
-  align-self: stretch; /* match the height of the text column */
+  min-width: 0;
+  /* allow the image to shrink inside the flex row */
+  align-self: stretch;
+  /* match the height of the text column */
   width: 100%;
   height: 250px;
   padding: 16px;
-  object-fit: contain; /* show the whole illustration, no cropping */
+  object-fit: contain;
+  /* show the whole illustration, no cropping */
   background-color: var(--color-gray-light);
   border-radius: 8px;
 }
@@ -56,7 +59,8 @@
 }
 
 .btn:hover {
-  background-color: var(--color-blue-dark); /* slightly darker shade of --color-blue */
+  background-color: var(--color-blue-dark);
+  /* slightly darker shade of --color-blue */
 }
 
 .btn:active {
@@ -80,10 +84,11 @@
 /* Mobile: smaller hero title (header behavior lives in components.css) */
 @media (max-width: 600px) {
   .hero__title {
-    font-size: var(--fs-info-header); /* 36px */
+    font-size: var(--fs-info-header);
+    /* 36px */
   }
 }
-  
+
 
 /* .info reuses .container (flex + max-width + horizontal padding). Stack its
    children vertically (heading on top, cards below) and center them. */
@@ -96,7 +101,8 @@
 
 .info__heading {
   margin-bottom: 48px;
-  font-size: var(--fs-info-header); /* 36px */
+  font-size: var(--fs-info-header);
+  /* 36px */
   font-weight: var(--fw-black);
   color: var(--color-dark);
   text-align: center;
@@ -115,7 +121,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  flex: 0 1 220px; /* sit four-in-a-row on desktop, allowed to shrink */
+  flex: 0 1 220px;
+  /* sit four-in-a-row on desktop, allowed to shrink */
   max-width: 220px;
 }
 
@@ -129,7 +136,8 @@
 .card__img {
   width: 100%;
   height: 160px;
-  object-fit: cover; /* crop instead of distort */
+  object-fit: cover;
+  /* crop instead of distort */
   border: 3px solid var(--color-dark);
   border-radius: 12px;
 }
@@ -137,7 +145,8 @@
 .card__caption {
   margin-top: 12px;
   font-size: 14px;
-  color: var(--color-gray-muted); /* muted gray for secondary text */
+  color: var(--color-gray-muted);
+  /* muted gray for secondary text */
   text-align: center;
 }
 
