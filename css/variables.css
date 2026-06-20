@@ -5,21 +5,45 @@
 
 :root {
   /* Colors */
-  --color-dark: #1F2937;        /* Hero & footer background; info header & quote text */
-  --color-light: #F9FAF8;       /* Hero title, logo */
-  --color-gray-light: #E5E7EB;  /* Secondary text, header links, quote background */
-  --color-blue: #3882F6;        /* Buttons, call-to-action background */
-  --color-gray-dark: #6B7280;    /* Muted gray, used for secondary text */
+  --color-dark: #1F2937;
+  /* Hero & footer background; info header & quote text */
+  --color-light: #F9FAF8;
+  /* Hero title, logo */
+  --color-gray-light: #E5E7EB;
+  /* Quote section background and secondary text */
+  --color-gray-dark: #6B7280;
+  /* Dark gray for borders, labels, and accents */
+  --color-gray-muted: var(--color-gray-dark);
+  /* Muted gray for secondary text */
+  --color-white: #FFFFFF;
+  /* Light surfaces and field backgrounds */
+  --color-blue: #3882F6;
+  /* Button and call-to-action background */
+  --color-blue-dark: #1C6FE0;
+  /* Hover shade for primary buttons */
+  --color-dark-faded: rgba(15, 23, 42, 0.35);
+  /* Faded dark for borders and accents */
+  --shadow-soft: rgba(0, 0, 0, 0.08);
+  /* Light shadow for cards */
+  --shadow-medium: rgba(0, 0, 0, 0.12);
+  /* Medium shadow for sections */
+  --shadow-strong: rgba(0, 0, 0, 0.15);
+  /* Strong shadow for buttons */
 
   /* Typography */
   --font: 'Roboto', sans-serif;
 
   /* Font sizes */
-  --fs-hero-title: 48px;        /* weight 900 */
-  --fs-logo: 24px;              /* weight 700 */
-  --fs-info-header: 36px;       /* weight 900 */
-  --fs-quote: 36px;             /* weight 300, italic */
-  --fs-secondary: 18px;         /* secondary text & links */
+  --fs-hero-title: 48px;
+  /* weight 900 */
+  --fs-logo: 24px;
+  /* weight 700 */
+  --fs-info-header: 36px;
+  /* weight 900 */
+  --fs-quote: 36px;
+  /* weight 300, italic */
+  --fs-secondary: 18px;
+  /* secondary text & links */
 
   /* Font weights */
   --fw-light: 300;

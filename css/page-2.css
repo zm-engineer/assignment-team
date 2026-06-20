@@ -51,7 +51,7 @@
 
 .value__text {
   font-size: var(--fs-secondary);
-  color: var(--color-gray-dark);
+  color: var(--color-gray-muted); /* muted gray for secondary text */
 }
 
 /* Mobile: force the value items into a single column. */

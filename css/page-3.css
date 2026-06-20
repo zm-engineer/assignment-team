@@ -7,8 +7,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background-color: #EEF2FF;
+    background-color: var(--color-gray-light);
     padding: 40px 32px 32px;
+    border: 2px solid var(--color-gray-dark);
     border-radius: 32px;
 }
 
@@ -51,6 +52,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    padding: 32px;
+    background-color: var(--color-gray-light);
+    border-radius: 24px;
 }
 
 .form-row {
@@ -70,7 +74,7 @@ main {
 
 .form-group label {
     font-size: 0.95rem;
-    color: #475569;
+    color: var(--color-gray-dark);
 }
 
 .form-group input,
@@ -78,7 +82,7 @@ main {
     width: 100%;
     padding: 12px 0;
     border: none;
-    border-bottom: 1px solid rgba(15, 23, 42, 0.35);
+    border-bottom: 1px solid var(--color-dark-faded);
     background: transparent;
     font: inherit;
     font-size: 1rem;
@@ -88,7 +92,8 @@ main {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-bottom-color: var(--color-blue);
+    border-bottom-color: var(--color-dark-faded);
+    background-color: var(--color-white);
 }
 
 .form-group textarea {
@@ -100,18 +105,19 @@ main {
     width: fit-content;
     margin-top: 4px;
     padding: 12px 32px;
-    border: 2px solid #475569;
+    border: 2px solid var(--color-gray-dark);
     border-radius: 14px;
     background-color: transparent;
-    color: #475569;
+    color: var(--color-gray-dark);
     font-weight: var(--fw-bold);
     transition: transform 0.1s ease, box-shadow 0.15s ease;
 }
 
 .contact-form .btn:hover {
-    background-color: transparent;
+    background-color: var(--color-blue-dark);
+    color: var(--color-light);
     transform: translateY(-1px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px var(--shadow-strong);
 }
 
 .contact-form .btn:active {
