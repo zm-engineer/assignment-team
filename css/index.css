@@ -1,12 +1,3 @@
-/* ==========================================================================
-   index.css — Page-specific styles for index.html
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   Section 1: Hero — owner: Ziuling
-   (Header/nav styles moved to the shared components.css)
-   -------------------------------------------------------------------------- */
-
 .hero-block {
   background-color: var(--color-dark);
 }
@@ -51,9 +42,6 @@
   border-radius: 8px;
 }
 
-/* --------------------------------------------------------------------------
-   Reusable button (also used in Section 4 — keep generic)
-   -------------------------------------------------------------------------- */
 .btn {
   display: inline-block;
   margin-top: 16px;
@@ -74,10 +62,6 @@
 .btn:active {
   transform: translateY(1px);
 }
-
-/* --------------------------------------------------------------------------
-   Responsive
-   -------------------------------------------------------------------------- */
 
 /* Tablet: stack hero text on top, image below */
 @media (max-width: 900px) {
@@ -101,9 +85,6 @@
 }
   
 
-/* --------------------------------------------------------------------------
-   Section 2: Some random information (4 cards) — owner: Ziuling
-   -------------------------------------------------------------------------- */
 /* .info reuses .container (flex + max-width + horizontal padding). Stack its
    children vertically (heading on top, cards below) and center them. */
 .info {
@@ -156,11 +137,10 @@
 .card__caption {
   margin-top: 12px;
   font-size: 14px;
-  color: #6B7280; /* muted gray, not an existing token */
+  color: var(--color-gray-dark); 
   text-align: center;
 }
 
-/* Tablet: cards wrap into a 2x2 layout. */
 @media (max-width: 900px) {
   .card {
     flex: 1 1 40%;
@@ -182,7 +162,7 @@
 
 .testimonial {
   flex-direction: column;
-   gap: 20px;
+  gap: 20px;
   padding: 64px 32px;
   margin-bottom: 80px;
   background-color: var(--color-gray-light);

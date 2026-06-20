@@ -9,6 +9,7 @@
   --color-light: #F9FAF8;       /* Hero title, logo */
   --color-gray-light: #E5E7EB;  /* Secondary text, header links, quote background */
   --color-blue: #3882F6;        /* Buttons, call-to-action background */
+  --color-gray-dark: #6B7280;    /* Muted gray, used for secondary text */
 
   /* Typography */
   --font: 'Roboto', sans-serif;

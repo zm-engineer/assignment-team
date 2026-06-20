@@ -12,7 +12,6 @@
   padding-bottom: 80px;
 }
 
-/* Heading styled like the information header (36px / 900). */
 .about__heading {
   margin-bottom: 24px;
   font-size: var(--fs-info-header);
@@ -52,7 +51,7 @@
 
 .value__text {
   font-size: var(--fs-secondary);
-  color: #6B7280; /* muted gray, not an existing token */
+  color: var(--color-gray-dark);
 }
 
 /* Mobile: force the value items into a single column. */
