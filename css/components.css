@@ -146,6 +146,17 @@
   color: var(--color-gray-light);
   text-align: center;
 }
+.site-footer__link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  margin-left: 1rem;
+  color: var(--color-light);
+  text-decoration: underline;
+}
+.site-footer__link:hover,
+.site-footer__link:focus {
+  color: var(--color-white);
+}
 
 /* --------------------------------------------------------------------------
    Responsive — collapse the nav behind a hamburger on small screens
