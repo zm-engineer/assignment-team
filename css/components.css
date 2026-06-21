@@ -53,6 +53,77 @@
   text-decoration: underline;
 }
 
+/* --------------------------------------------------------------------------
+   Hamburger toggle for mobile nav 
+   -------------------------------------------------------------------------- */
+
+.nav-toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hidden on desktop; revealed in the mobile media query. */
+.nav-toggle-btn {
+  display: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+/* The middle bar; ::before and ::after make the top and bottom bars. */
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--color-light);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-bars {
+  position: relative;
+  top: 13px;
+}
+
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-bars::before {
+  top: -9px;
+}
+
+.nav-toggle-bars::after {
+  top: 9px;
+}
+
+.nav-toggle:focus-visible ~ .nav-toggle-btn {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 4px;
+}
+
+/* When open, morph the three bars into an "X". */
+.nav-toggle:checked ~ .nav-toggle-btn .nav-toggle-bars {
+  background-color: transparent;
+}
+
+.nav-toggle:checked ~ .nav-toggle-btn .nav-toggle-bars::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle:checked ~ .nav-toggle-btn .nav-toggle-bars::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 
 /* --------------------------------------------------------------------------
    Shared footer
@@ -77,17 +148,46 @@
 }
 
 /* --------------------------------------------------------------------------
-   Responsive — header centers and nav wraps on small screens
+   Responsive — collapse the nav behind a hamburger on small screens
    -------------------------------------------------------------------------- */
 @media (max-width: 600px) {
+  /* Logo on the left, hamburger on the right; the nav wraps to a new line. */
   .site-header__inner {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  /* Show the hamburger button. */
+  .nav-toggle-btn {
+    display: block;
+  }
+
+  /* Hide the nav by default; it spans the full width when revealed so it
+     drops below the logo/button row. */
+  .site-nav {
+    flex-basis: 100%;
+    display: none;
+  }
+
+  /* Reveal the nav when the checkbox is checked. */
+  .nav-toggle:checked ~ .site-nav {
+    display: block;
+  }
+
+  /* Stack the links vertically as a full-width dropdown. */
   .nav-list {
-    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 12px;
+  }
+
+  .nav-list li {
+    border-top: 1px solid var(--color-dark-faded);
+  }
+
+  .site-nav a {
+    display: block;
+    padding: 10px 4px;
   }
 }
