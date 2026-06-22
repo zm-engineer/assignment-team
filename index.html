@@ -35,25 +35,26 @@
       </nav>
     </div>
   </header>
-  <section class="hero-block">
-    <!-- Hero: two columns (text + image)
-       The div tag is used to group elements by design;
-       no specific semantic tag is needed here. -->
-    <div class="hero container">
-      <div class="hero__text">
-        <h1 class="hero__title">The web, kept simple</h1>
-        <p class="hero__subtext">
-          We craft fast, accessible websites with clean, vanilla HTML and CSS —
-          no bulky frameworks, no clutter. Just content that loads instantly and
-          works on every screen.
-        </p>
-        <a href="page-3.html" class="btn">Get in touch</a>
+  <main id="main-content">
+    <section class="hero-block">
+      <!-- Hero: two columns (text + image)
+         The div tag is used to group elements by design;
+         no specific semantic tag is needed here. -->
+      <div class="hero container">
+        <div class="hero__text">
+          <h1 class="hero__title">The web, kept simple</h1>
+          <p class="hero__subtext">
+            We craft fast, accessible websites with clean, vanilla HTML and CSS —
+            no bulky frameworks, no clutter. Just content that loads instantly and
+            works on every screen.
+          </p>
+          <a href="page-3.html" class="btn">Get in touch</a>
+        </div>
+        <img class="hero__image" src="img/hero-illustration.png"
+          alt="Illustration of web development on a laptop showing HTML and DIV tags" />
       </div>
-      <img class="hero__image" src="img/hero-illustration.png"
-        alt="Illustration of web development on a laptop showing HTML and DIV tags" />
-    </div>
-  </section>
-  <main>
+    </section>
+
     <section class="info container">
       <h2 class="info__heading">What we care about.</h2>
 
@@ -117,6 +118,7 @@
     <div class="site-footer__inner">
       <p class="site-footer__text">
         &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
+        <a href="#main-content" class="site-footer__link">Back to top</a>
       </p>
     </div>
   </footer>

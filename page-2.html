@@ -1,171 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
 
-    <!-- Shared CSS foundation -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <!-- Shared components (header, footer) -->
-    <link rel="stylesheet" href="css/components.css" />
-    <!-- Page-specific styles -->
-    <link rel="stylesheet" href="css/page-2.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
-        <!-- Pure-CSS hamburger: hidden checkbox toggles the nav on mobile -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation menu">
-          <span class="nav-toggle-bars"></span>
-        </label>
-        <nav class="site-nav" aria-label="Primary">
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page-2.html" aria-current="page">About</a></li>
-            <li><a href="page-3.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
 
-    <main class="about container">
-      <h1 class="about__heading">About us</h1>
+  <!-- Shared CSS foundation -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- Shared components (header, footer) -->
+  <link rel="stylesheet" href="css/components.css" />
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="css/page-2.css" />
+</head>
 
-      <p class="about__text">
-        We build a simple, fast website that puts the content first. No clutter,
-        no heavy frameworks — just clean pages that load quickly and read well on
-        any screen.
-      </p>
-      <p class="about__text">
-        This project is a hands-on exercise in vanilla HTML and CSS: a shared
-        design system, reusable components, and responsive layouts built entirely
-        with Flexbox.
-      </p>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo"><span class="logo__mark">&lt;/&gt;</span>simpleWeb</a>
+      <!-- Pure-CSS hamburger: hidden checkbox toggles the nav on mobile -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bars"></span>
+      </label>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page-2.html" aria-current="page">About</a></li>
+          <li><a href="page-3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Value items: a Flexbox row that wraps to one column on small screens -->
-      <ul class="values">
-        <li class="value">
-          <h2 class="value__title">Lightweight</h2>
-          <p class="value__text">No libraries or build steps — only the essentials.</p>
-        </li>
-        <li class="value">
-          <h2 class="value__title">Responsive</h2>
-          <p class="value__text">Layouts adapt from desktop down to mobile.</p>
-        </li>
-        <li class="value">
-          <h2 class="value__title">Accessible</h2>
-          <p class="value__text">Semantic markup that everyone can navigate.</p>
-        </li>
-      </ul>
+  <main id="main-content" class="about container">
+    <h1 class="about__heading">About us</h1>
 
-      <!-- Our story: text + illustration, two columns that stack on mobile -->
-      <section class="story">
-        <div class="story__text">
-          <h2 class="story__heading">How simpleWeb started</h2>
-          <p class="story__paragraph">
-            simpleWeb began as a small experiment: could we build a fast,
-            good-looking website using nothing but the platform itself — plain
-            HTML and CSS? No build tools, no megabytes of JavaScript, no
-            framework churn to keep up with.
-          </p>
-          <p class="story__paragraph">
-            The answer turned out to be a confident yes. What started as a class
-            assignment grew into a shared design system, reusable components, and
-            pages that load before you can blink — proof that the fundamentals
-            still go a long way.
-          </p>
-        </div>
-        <figure class="story__figure">
-          <img class="story__img" src="img/hero-illustration.png"
-            alt="Illustration of a laptop showing HTML and DIV tags" />
-        </figure>
-      </section>
+    <p class="about__text">
+      We build a simple, fast website that puts the content first. No clutter,
+      no heavy frameworks — just clean pages that load quickly and read well on
+      any screen.
+    </p>
+    <p class="about__text">
+      This project is a hands-on exercise in vanilla HTML and CSS: a shared
+      design system, reusable components, and responsive layouts built entirely
+      with Flexbox.
+    </p>
 
-      <!-- How we work: an ordered, sequential process -->
-      <section class="process">
-        <h2 class="process__heading">How we work</h2>
-        <ol class="steps">
-          <li class="step">
-            <span class="step__number">1</span>
-            <h3 class="step__title">Discover</h3>
-            <p class="step__text">
-              We start by understanding your content, your audience and what
-              success looks like — before a single line of code.
-            </p>
-          </li>
-          <li class="step">
-            <span class="step__number">2</span>
-            <h3 class="step__title">Design</h3>
-            <p class="step__text">
-              We sketch clean, accessible layouts with a clear hierarchy, using a
-              consistent design system from the very first screen.
-            </p>
-          </li>
-          <li class="step">
-            <span class="step__number">3</span>
-            <h3 class="step__title">Build</h3>
-            <p class="step__text">
-              We write semantic HTML and modular CSS — no frameworks, no clutter,
-              just lean code that is easy to read and maintain.
-            </p>
-          </li>
-          <li class="step">
-            <span class="step__number">4</span>
-            <h3 class="step__title">Launch</h3>
-            <p class="step__text">
-              We ship pages that load instantly and work on every screen, then
-              keep them simple enough to evolve over time.
-            </p>
-          </li>
-        </ol>
-      </section>
+    <!-- Value items: a Flexbox row that wraps to one column on small screens -->
+    <ul class="values">
+      <li class="value">
+        <h2 class="value__title">Lightweight</h2>
+        <p class="value__text">No libraries or build steps — only the essentials.</p>
+      </li>
+      <li class="value">
+        <h2 class="value__title">Responsive</h2>
+        <p class="value__text">Layouts adapt from desktop down to mobile.</p>
+      </li>
+      <li class="value">
+        <h2 class="value__title">Accessible</h2>
+        <p class="value__text">Semantic markup that everyone can navigate.</p>
+      </li>
+    </ul>
 
-      <!-- By the numbers: definition list of stats -->
-      <section class="stats">
-        <h2 class="stats__heading">By the numbers</h2>
-        <dl class="stats__list">
-          <div class="stat">
-            <dt class="stat__label">Frameworks used</dt>
-            <dd class="stat__value">0</dd>
-          </div>
-          <div class="stat">
-            <dt class="stat__label">Accessible by design</dt>
-            <dd class="stat__value">100%</dd>
-          </div>
-          <div class="stat">
-            <dt class="stat__label">Typical load time</dt>
-            <dd class="stat__value">&lt;1s</dd>
-          </div>
-          <div class="stat">
-            <dt class="stat__label">Build steps required</dt>
-            <dd class="stat__value">None</dd>
-          </div>
-        </dl>
-      </section>
-
-      <!-- Our principles: a guiding quote -->
-      <section class="principles">
-        <h2 class="principles__heading">What guides us</h2>
-        <blockquote class="principles__quote">
-          <p class="principles__text">
-            "Keep it simple, keep it accessible, and let the content lead. Every
-            kilobyte we don't ship is a kilobyte the visitor never waits for."
-          </p>
-          <cite class="principles__author">— The simpleWeb team</cite>
-        </blockquote>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <p class="site-footer__text">
-          &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
+    <!-- Our story: text + illustration, two columns that stack on mobile -->
+    <section class="story">
+      <div class="story__text">
+        <h2 class="story__heading">How simpleWeb started</h2>
+        <p class="story__paragraph">
+          simpleWeb began as a small experiment: could we build a fast,
+          good-looking website using nothing but the platform itself — plain
+          HTML and CSS? No build tools, no megabytes of JavaScript, no
+          framework churn to keep up with.
+        </p>
+        <p class="story__paragraph">
+          The answer turned out to be a confident yes. What started as a class
+          assignment grew into a shared design system, reusable components, and
+          pages that load before you can blink — proof that the fundamentals
+          still go a long way.
         </p>
       </div>
-    </footer>
-  </body>
+      <figure class="story__figure">
+        <img class="story__img" src="img/hero-illustration.png"
+          alt="Illustration of a laptop showing HTML and DIV tags" />
+      </figure>
+    </section>
+
+    <!-- How we work: an ordered, sequential process -->
+    <section class="process">
+      <h2 class="process__heading">How we work</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__number">1</span>
+          <h3 class="step__title">Discover</h3>
+          <p class="step__text">
+            We start by understanding your content, your audience and what
+            success looks like — before a single line of code.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number">2</span>
+          <h3 class="step__title">Design</h3>
+          <p class="step__text">
+            We sketch clean, accessible layouts with a clear hierarchy, using a
+            consistent design system from the very first screen.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number">3</span>
+          <h3 class="step__title">Build</h3>
+          <p class="step__text">
+            We write semantic HTML and modular CSS — no frameworks, no clutter,
+            just lean code that is easy to read and maintain.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number">4</span>
+          <h3 class="step__title">Launch</h3>
+          <p class="step__text">
+            We ship pages that load instantly and work on every screen, then
+            keep them simple enough to evolve over time.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- By the numbers: definition list of stats -->
+    <section class="stats">
+      <h2 class="stats__heading">By the numbers</h2>
+      <dl class="stats__list">
+        <div class="stat">
+          <dt class="stat__label">Frameworks used</dt>
+          <dd class="stat__value">0</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Accessible by design</dt>
+          <dd class="stat__value">100%</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Typical load time</dt>
+          <dd class="stat__value">&lt;1s</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat__label">Build steps required</dt>
+          <dd class="stat__value">None</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Our principles: a guiding quote -->
+    <section class="principles">
+      <h2 class="principles__heading">What guides us</h2>
+      <blockquote class="principles__quote">
+        <p class="principles__text">
+          "Keep it simple, keep it accessible, and let the content lead. Every
+          kilobyte we don't ship is a kilobyte the visitor never waits for."
+        </p>
+        <cite class="principles__author">— The simpleWeb team</cite>
+      </blockquote>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">
+        &copy; 2026 simpleWeb. All rights reserved. Built with vanilla HTML and CSS.
+        <a href="#main-content" class="site-footer__link">Back to top</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
