@@ -204,7 +204,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0;
+    padding: 0 24px;
 }
 
 .contact-divider {
@@ -218,6 +218,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
+    margin-inline: auto;
 }
 
 .contact-map__heading {
@@ -265,5 +267,19 @@ main {
 
     .form-row>.form-group {
         flex: unset;
+    }
+
+    .contact-map__inner {
+        max-width: 603px;
+        margin-inline: auto;
+    }
+
+
+    .contact-map__image {
+        object-fit: contain;
+        min-height: 160px;
+        transform: scale(0.92);
+        transform-origin: center;
+        margin-inline: auto;
     }
 }
